@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Ecommerce</title>
+</head>
+<body>
+     <div style="background-image: url('ecommerce.jpg');"> 
+	<div>
+		<a href="file:///home/suren/suren/home.html">HOME</a>
+		<a href="#">PRODUCTS</a>
+		<a href="file:///home/suren/suren/contact.html">CONTACT</a>
+		<a href="file:///home/suren/suren/about.html">ABOUT US</a>
+    </div><br><br><br>
+    
+
+<div>
+<!-- Form for the adding the items -->
+
+<form onsubmit="validate()">
+
+  
+  <label for="url"> Link:</label>
+  <input type="text" id="url" name="url" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: pointer;"> <br><br>
+
+
+  <label for="ProductName">Product Name:</label>
+  <input type="text" id="ProductName" name="ProductName"><br><br>
+
+  <label for="price">price:</label>
+  <input type="text" id="price" name="price"><br><br>
+  
+   <button type="submit">ADD</button>
+
+
+</form><br><br>
+
+
+
+</div>
+
+<!-- form validation comes here  -->
+
+<script type="text/javascript">
+    function validate() { 
+    
+    if(document.getElementById('url').value ==""){
+        alert("please insert an url");
+        return false;
+    }
+     
+     if(document.getElementById('ProductName').value ==""){
+        alert("please insert the Product Name");
+        return false;
+    }
+
+    if(document.getElementById('price').value ==""){
+        alert("please insert the Price of Product");
+        return false;
+    }
+
+    return true;
+
+
+    }
+</script>
+
+
+
+<footer>
+       COPYRIGHT@SURENALE
+    </footer>
+
+</div></body></html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ecommerce</title>
+</head>
+<body>
+     <div style="background-image: url('ecommerce.jpg');"> 
+	<div>
+		<a href="home.html">HOME</a>
+		<a href="#">PRODUCTS</a>
+		<a href="contact.html">CONTACT</a>
+		<a href="about.html">ABOUT US</a>
+    </div><br><br><br>
+    <!--
+    <div>
+    	<ul>
+         <div>
+             <a href="men.html">MEN PRODUCT</a>
+             <a href="women.html">WOMEN PRODUCT</a>
+             <a href="child.html">CHILD PRODUCT</a> 
+         </div>   
+        </ul>
+            
+               <div> <img src="men.jpg" alt="men product" height="200px" width="50%"></div>
+
+               <div> <img src="women.jpg" alt="women product" height="200px" width="50%"></div>
+               <div>
+                <img src="child.jpg" alt="child product" height="200px" width="50%">
+            </div>
+
+    </div>
+-->
+
+<div>
+<!-- Form for the adding the items -->
+
+<form  onsubmit="validate()" >
+
+  
+  <label for="url"> Link:</label>
+  <input type="text" id="url" name="url"> <br><br>
+
+
+  <label for="ProductName">Product Name:</label>
+  <input type="text" id="ProductName" name="ProductName"><br><br>
+
+  <label for="price">price:</label>
+  <input type="text" id="price" name="price"><br><br>
+  
+   <button type="submit" >ADD</button>
+
+
+</form><br><br>
+
+
+
+</div>
+
+<!-- form validation comes here  -->
+
+<script type="text/javascript">
+    function validate() { 
+    
+    if(document.getElementById('url').value ==""){
+        alert("please insert an url");
+        return false;
+    }
+     
+     if(document.getElementById('ProductName').value ==""){
+        alert("please insert the Product Name");
+        return false;
+    }
+
+    if(document.getElementById('price').value ==""){
+        alert("please insert the Price of Product");
+        return false;
+    }
+
+    return true;
+
+
+    }
+</script>
+
+</body>
+
+<footer>
+       COPYRIGHT@SURENALE
+    </footer>
+
+</html>
